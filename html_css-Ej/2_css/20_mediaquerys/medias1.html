@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media querys</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .cuadrado {
+            background-color: tomato;
+            width: calc(100% -20px);
+            margin: 0 auto;
+            height: 300px;
+            margin: 10px;
+        }
+
+        @media(min-width:700px) {
+            .cuadrado {
+                border: 5px solid black;
+                width: calc(80% - 20px);
+                margin: 10px auto;
+                height: 500px;
+            }
+        }
+
+        @media(min-width: 1000px) {
+
+
+            .cuadrado {
+                background-color: aqua;
+                width: calc(100% - 20px);
+            }
+        }
+
+        @media(orientation: portrait) {
+
+            /* landscape*/
+            .cuadrado {
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="cuadrado"></div>
+</body>
+
+</html>

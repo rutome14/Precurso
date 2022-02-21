@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .fijas {
+            width: 700px;
+            height: 200px;
+            background-color: tomato;
+        }
+
+        .maximas {
+            max-width: 700px;
+            min-height: 100px;
+            background-color: blue;
+            overflow: hidden;
+            /* mascara cuando el texto, todo texto desbordado queda fuera de la caja*/
+        }
+
+        .porcentuales1 {
+            width: 80%;
+            background-color: green;
+            /* margin: 0 auto; */
+            /* height: 40%; No funciona por que no es muy dificil medir alto de algo que no para de crecer */
+            height: 40%;
+        }
+
+        .porcentuales2 {
+            width: 80%;
+            max-width: 700px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fijas">Medidas fijas</div>
+
+    <div class="maximas">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolore atque aut fugiat a, natus quidem debitis
+        explicabo excepturi id illo recusandae asperiores maxime molestiae, quisquam impedit aliquam eveniet veniam!
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, dolor perspiciatis non distinctio mollitia
+        assumenda? Expedita suscipit velit quae? Cupiditate nobis dolore modi magnam laudantium vitae quas unde
+        assumenda ducimus.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid tempora dolor fuga? Accusantium ipsa
+        pariatur nostrum cupiditate, in atque dolorum quaerat. Consectetur, dolores autem quo inventore dolore beatae
+        molestias!
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita inventore eum beatae, dolores natus adipisci
+        aperiam sint deleniti voluptatum, non saepe ipsam laboriosam amet nihil molestiae, rerum nostrum praesentium
+        molestias!
+
+    </div>
+
+    <div class="porcentuales1">Medidas porcentuales1
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid tempora dolor fuga? Accusantium ipsa
+        pariatur nostrum cupiditate, in atque dolorum quaerat. Consectetur, dolores autem quo inventore dolore beatae
+        molestias!
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita inventore eum beatae, dolores natus adipisci
+        aperiam sint deleniti voluptatum, non saepe ipsam laboriosam amet nihil molestiae, rerum nostrum praesentium
+        molestias!
+    </div>
+
+    <div class="porcentuales2">Medidas porcentuales 2</div>
+
+</body>
+
+</html>

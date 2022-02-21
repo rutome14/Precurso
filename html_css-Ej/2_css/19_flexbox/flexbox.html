@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* flexbox se centra en el contenedor de los elementos que quiero colocar*/
+        section.articulos {
+            display: flex;
+            /* flex-direction: column; row */
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section.articulos article {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="articulos">
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+        <article>
+            <img src="images/perro.jpg">
+        </article>
+    </section>
+
+</body>
+
+</html>

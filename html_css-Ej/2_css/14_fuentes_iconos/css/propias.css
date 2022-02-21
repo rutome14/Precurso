@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'backbonesregular';
+    src: url('../fonts/backbones-webfont.woff') format('woff2'), url('../fonts/backbones-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'backbonesregular';
+}

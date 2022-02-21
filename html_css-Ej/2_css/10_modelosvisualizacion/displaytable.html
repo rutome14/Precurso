@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display table</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .tabla {
+            display: table;
+            width: 100%;
+        }
+
+        .tabla>div {
+            display: table-row;
+        }
+
+        .tabla>div>div {
+            display: table-cell;
+            padding: 10px;
+            background-color: tomato;
+            border: 1px solid black;
+        }
+
+        .seccion article {
+            display: table-cell;
+            height: 150px;
+            width: 33%;
+            padding: 20px;
+            border: 10px solid white;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabla">
+
+        <div>
+            <div>Nombre</div>
+            <div>Apellido</div>
+            <div>Edad</div>
+        </div>
+
+        <div>
+            <div>Juan Antonio</div>
+            <div>Perez</div>
+            <div>38</div>
+        </div>
+
+        <div>
+            <div>Pepe</div>
+            <div>Villuela</div>
+            <div>60</div>
+        </div>
+
+        <div>
+            <div>Teresa</div>
+            <div>Lopez</div>
+            <div>18</div>
+        </div>
+    </div>
+
+    <section class="seccion">
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsa.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsa.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsa.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus, ipsa.</article>
+    </section>
+</body>
+
+</html>

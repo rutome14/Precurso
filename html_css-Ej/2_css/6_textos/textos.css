@@ -1,0 +1,29 @@
+/* Estilos de fuente-font y estilos de texto-text */
+
+body {
+    font-size: 16px;
+    /* en % en px en em y en rem */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 330%;
+    color: tomato;
+    font-style: italic;
+    font-weight: lighter;
+    /*bold, 300, 400, 500 ...*/
+}
+
+p {
+    line-height: 24px;
+    /*espacio entre lineas*/
+    text-align: left;
+    /* center, left, right, justify */
+    text-transform: lowercase;
+    /* uppercase, capitalize */
+    text-decoration: overline 3px dashed tomato;
+    /* formato de linea double, dotted, dashed, solid */
+    /* underline */
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 2px tomato;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia correcta</title>
+    <style>
+        .seccionNegra {
+            background-color: black;
+            color: white;
+        }
+
+        .seccionBeige {
+            background-color: beige;
+        }
+
+        section p {
+            padding: 10px;
+        }
+
+        .seccionNegra h2 {
+            background-color: tomato;
+        }
+
+        section h2 {
+            background-color: green;
+        }
+
+        .seccionBeige h2 {
+            background-color: violet;
+        }
+
+        footer p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Titulo de pagina</h1>
+        <section class="seccionNegra">
+            <!-- va tener un color de fondo negro, color de fuente blanco y un titulo de color rojo de fondo, todos los parrafos tendrar un espacio a los lados de 10px-->
+            <h2>Titulo de seccion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aliquam nisi
+                officia repudiandae
+                possimus porro quasi corporis labore doloremque, dicta laboriosam adipisci libero sit facilis deserunt
+                minima in odio. Nesciunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nulla ipsa quam
+                repellat quibusdam,
+                eaque porro blanditiis aspernatur quia, quos et veritatis! Magni deserunt hic obcaecati quos quaerat
+                facilis accusamus.</p>
+        </section>
+        <section class="seccionBeige">
+            <!-- va tener un color de fondo beige, color de fuente gris y un titulo de color morado de fondo, todos los parrafos tendrar un espacio a los lados de 10px-->
+            <h2>Titulo de seccion 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minus consectetur alias
+                temporibus
+                asperiores? Ut assumenda ipsam maxime aut quos fuga placeat, dolorum a quia reiciendis quis, corporis
+                tenetur magni!</p>
+        </section>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse assumenda eos facilis,
+                architecto distinctio doloribus reprehenderit nostrum quisquam minus sint excepturi cum, quibusdam nihil
+                nisi, fuga veritatis nam accusantium.</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            list-style: none;
+        }
+
+        .menu li {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            width: 200px;
+            text-align: right;
+            margin-left: -50px;
+            transition: 1s;
+        }
+
+        .menu li:hover {
+            margin-left: 0px;
+        }
+
+        .menu li:first-child {
+            background-color: lightcoral;
+        }
+
+        .menu li:last-child {
+            background-color: lightseagreen;
+        }
+
+        .menu li:nth-child(2) {
+            background-color: rgb(169, 255, 71);
+        }
+
+        .menu li:nth-child(3) {
+            background-color: rgb(240, 71, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>Galeria</li>
+        <li>Contacto</li>
+        <li>Quienes somos</li>
+    </ul>
+
+</body>
+
+</html>

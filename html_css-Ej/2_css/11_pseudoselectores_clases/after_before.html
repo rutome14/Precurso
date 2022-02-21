@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoselectores</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        ul li:before {
+            content: "> "
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px;
+            background-color: lightcoral;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            color: darkred;
+        }
+
+        .boton:after {
+            content: " ->"
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>home</li>
+        <li>galeria</li>
+        <li>contacto</li>
+    </ul>
+
+    <a class="boton" href="">Ir a contenido</a>
+</body>
+
+</html>

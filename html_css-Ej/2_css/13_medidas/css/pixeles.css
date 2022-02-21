@@ -1,0 +1,29 @@
+@import url(reset.css);
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fontSize: 20px;
+}
+
+body {
+    font-size: var(--fontSize);
+}
+
+h1 {
+    font-size: calc(var(--fontSize) * 3);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+section article {
+    height: 250px;
+    margin: 10px;
+    width: 600px;
+    background-color: violet;
+    display: inline-block;
+}

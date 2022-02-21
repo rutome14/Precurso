@@ -1,0 +1,27 @@
+@import url(reset.css);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 20px; */
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+section article {
+    height: 250px;
+    margin: 1%;
+    width: 70%;
+    /* se pueden combinar con pixeles */
+    max-width: 600px;
+    background-color: violet;
+}

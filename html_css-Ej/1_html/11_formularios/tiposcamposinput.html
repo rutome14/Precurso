@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de campos form</title>
+</head>
+
+<body>
+
+    <form action="resultado.html" method="post" enctype="multipart/form">
+        <!-- etiqueta que avisa al usuario de lo que tiene que escribir o contestar, el atributo for sirve para relacionar el input con el value -->
+        <label for="">Nombre</label>
+
+        <!-- input que admite texto -->
+        <input type="text" name="nombre" id="nombre">
+
+        <!-- input que admite numeros -->
+        <input type="number" name="edad" min="0" max="50" step="2">
+
+        <!-- boton para ejecutar el formulario -->
+        <input type="submit" value="Guardar">
+        <button>Enviar</button>
+
+        <!-- input para contraseña -->
+        <input type="password" name="pass">
+
+        <!-- input para email -->
+        <input type="email" name="email" placeholder="introduce un email">
+
+        <!-- input para rangos numericos -->
+        <label>Rango -20 y 20</label>
+        <input type="range" name="rango" min="-20" max="20">
+
+        <!-- input para colores -->
+        <input type="color" name="color">
+
+        <!-- input para fecha -->
+        <input type="date" name="fecha">
+
+        <!-- input para horas o tiempo-->
+        <label for="">hora inicio</label>
+        <input type="time" name="horas" value="13:30">
+        <label for="">hora fin</label>
+        <input type="time" name="horas" value="13:30">
+
+        <!-- semanas - no admitido solo chrome-->
+        <input type="week" name="semanas">
+
+        <!-- para enviar archivos adjuntos ** OJO es necesario la propiedad de form enctype="multipart/form-data"-->
+        <div>
+            <label for="file">Añadir adjunto</label>
+            <input type="file" id="file" name="file">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

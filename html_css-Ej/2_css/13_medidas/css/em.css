@@ -1,0 +1,31 @@
+@import url(reset.css);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    /* 1em interpreta que la fuenta es el tamaño qu ehay decidio el usuario si un usuario decide tener la fuente en 24px 1em - 24px. Normalmente 1 em son 16px por que los navegadores es el tamaño que manejan por defecto */
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section article {
+    width: 37.500em;
+    background-color: aquamarine;
+    height: 15.625em;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Basico</title>
+</head>
+
+<body>
+    <!-- todo formulario empieza rodea de una etiqueta form, se encarga de recoger todos los datos que cada campo -->
+    <!-- GET lo envia por le url, POST lo envia por http, POST no es visible-->
+    <form action="resultado.html" method="GET">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombrecito" value="Pepe">
+        <label for="edad">Edad</label>
+        <input type="text" id="edad" name="edad" placeholder="introduce tu edad numerica">
+        <!-- submit ejecuta el envio del formulario y me lleva a resultado-->
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

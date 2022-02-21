@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencia entre elementos en bloque y en line</title>
+</head>
+
+<body>
+    <!-- existe dos tipos de elementos: BLOQUE Y EN LINEA -->
+
+    <!-- BLOQUE: ocupa el 100% del espacio en ancho de pantalla, no tiene ningun tipo de altura, la altura se la da el contenido. pero se puede asignar anchura y altura. -->
+
+    <!-- LINEA: ocupa solo lo que contiene tanto de alto como de ancho y no se le puede asignar alto y ancho varibles -->
+
+
+    <!-- cosas importantes -->
+
+    <!-- elementos en bloque pueden contener otros elementos en bloque y elementos en linea. -->
+
+    <!-- IMPORTANTE un elemento en linea NO PUEDE contener un elemento en bloque -->
+
+    <p style="background-color: tomato; width:100px">Lorem ipsum dolor <strong>sit amet</strong> consectetur
+        adipisicing elit. Nam
+        earum velit
+        eveniet
+        officiis ea dignissimos, quod
+        adipisci, minima et est ipsam placeat nostrum at vitae iure! Ut animi labore incidunt!</p>
+
+    <a href="#" style="background-color: tomato;">ENLACE</a><strong>CASA</strong>
+
+    <!-- un elemento bloque y dentro un elemento linea o otro bloques -->
+
+    <div style="width: 30%; background-color: tomato;">
+        <h1>Titulo de algo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Hola</a> necessitatibus, suscipit, porro
+            nisi accusamus
+            beatae quos in ea illo enim rerum blanditiis, deleniti optio nesciunt esse at quas quo animi.</p>
+    </div>
+
+    <!-- ELEMENTO EN LINEA CONTIENE BLOQUE - ERROR CONCEPTO -->
+
+    <section>
+        <h2>Productos</h2>
+        <hr>
+        <article>
+            <h3>Titulo de producto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, corporis!</p>
+            <a href="">ver caracteristicas</a>
+        </article>
+        <hr>
+        <article style="background-color: red;">
+            <h3><a href="">Titulo de producto</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, corporis!</p>
+            <a href="">ver caracteristicas</a>
+        </article>
+        <hr>
+        <!-- incorrecto pero se puede solucionar con css-->
+        <a href="" style="background-color: red; width: 100%; display: block">
+            <article>
+                <h3>Titulo de producto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, corporis!</p>
+
+            </article>
+        </a>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo {
+            color: red;
+        }
+
+        section .rojo {
+            color: lightcoral;
+        }
+
+        section p.rojo {
+            border: 1px solid black;
+        }
+
+        section>p {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="rojo">Titulo</h1>
+    <section>
+        <h2>Titulo de seccion</h2>
+        <p class="rojo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim sapiente sed quasi
+            mollitia eum, quod
+            quas provident ullam distinctio, aspernatur dolores voluptatum doloribus? Autem optio quam ab earum
+            dignissimos! </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim sapiente sed quasi mollitia eum, quod
+            quas provident ullam <span class="rojo">HOLA</span> distinctio, aspernatur dolores voluptatum doloribus?
+            Autem optio quam ab earum
+            dignissimos! </p>
+        <div class="rojo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim sapiente sed quasi
+            mollitia eum, quod
+            quas provident
+            <p>HOLA COMO ESTAS</p>
+            ullam distinctio, aspernatur dolores voluptatum doloribus? Autem optio quam ab earum
+            dignissimos!
+        </div>
+    </section>
+
+</body>
+
+</html>

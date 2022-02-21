@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section article {
+            width: calc(33.333% - 20px);
+            background-color: tomato;
+            border: 1px solid black;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }
+
+        /* section article:first-child {
+            float: left;
+        }
+
+        section article:last-child {
+            float: right;
+        } */
+
+        .articulos:after {
+            content: "";
+            height: 0;
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="articulos">
+        <article>
+            <h3>Titulo del articulo</h3>
+        </article>
+        <article>
+            <h3>Titulo del articulo</h3>
+        </article>
+        <article>
+            <h3>Titulo del articulo</h3>
+        </article>
+    </section>
+
+    <section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ad optio quis recusandae excepturi
+            incidunt eligendi doloremque voluptas ab odio laudantium eaque sint maxime nemo, eum ullam culpa voluptate
+            molestias.</div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parrafo1 {
+            color: blue;
+        }
+
+        .parrafo {
+            color: red;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- en css los elementos que estan debajo sobrescriben a los que estan encima, pero con algunas salvedades. 
+            GRADOS DE IMPORTANCIA.
+    
+                    - las etiquetas en css son las menos importantes por son las mas genericas.
+                    - las clases son mas importante que la etiqueta pero menos con el identificador.
+                    - Los identificadores son los más importantes 
+                    - los inyectados tampoco son una buena opcion por lo ya explicado y ademas por rompen la especificidad de mis elementos estilo
+                    - !important es como ultimo recurso y no debemos usarlo mucho
+        -->
+
+    <p class="parrafo" id="parrafo1" style="color: yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis sunt porro
+        minus unde,
+        recusandae molestiae
+        corrupti ullam illo iure hic explicabo nesciunt atque adipisci nulla quaerat quibusdam provident architecto.
+        Sit.</p>
+
+    <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, nisi autem. Rerum amet
+        beatae ut minima, corporis veritatis recusandae aut quod reprehenderit aliquam, dolores fuga quibusdam esse.
+        Minima, recusandae repellendus!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, sint aspernatur ipsum nemo accusantium voluptatum
+        quae deserunt, eius vero error ipsam voluptates eaque dolorem alias aliquid eveniet quia similique nisi.</p>
+
+</body>
+
+</html>
